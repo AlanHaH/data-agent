@@ -5,9 +5,9 @@ services:
     container_name: mysql
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: Atguigu.123
-      MYSQL_USER: atguigu
-      MYSQL_PASSWORD: Atguigu.123
+      MYSQL_ROOT_PASSWORD: aiqa123456
+      MYSQL_USER: aiqa
+      MYSQL_PASSWORD: aiqa123456
     ports:
       - "3306:3306"
     volumes:
