@@ -1,0 +1,43 @@
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+/data-agent/conf/app_config.yaml
+*.pem
+*.key
+
+# Installed dependencies and generated output
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+dist/
+dist-ssr/
+build/
+*.egg-info/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime files
+logs/
+*.log
+*.local
+
+# Downloaded model; see docker/embedding/README.md
+/docker/embedding/bge-large-zh-v1.5/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
