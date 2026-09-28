@@ -12,14 +12,14 @@ logging:
 db_meta:
   host: localhost
   port: 3306
-  user: atguigu
+  user: aiqa
   password: "change-me-app-password"
   database: meta
 
 db_dw:
   host: localhost
   port: 3306
-  user: atguigu
+  user: aiqa
   password: "change-me-app-password"
   database: dw
 

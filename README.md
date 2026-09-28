@@ -36,11 +36,11 @@ Copy-Item data-agent/conf/app_config.example.yaml data-agent/conf/app_config.yam
 Copy-Item docker/.env.example docker/.env
 ```
 
-已有本地配置时跳过复制，避免覆盖。编辑这两个文件：
+已有本地配置时跳过复制，避免覆盖。已有数据库的用户名、密码应以实际数据库为准；新的空数据库使用下述默认账号。编辑这两个文件：
 
 - 在 `docker/.env` 中设置 MySQL root 密码与应用用户密码。
 - 在 `data-agent/conf/app_config.yaml` 中，将 `db_meta.password` 和 `db_dw.password` 设置为与 `MYSQL_PASSWORD` 相同的值，并填写 `llm.api_key`。
-- 数据库初始化脚本为 `atguigu` 用户授权，因此默认保留该用户名。
+- 数据库初始化脚本为 `aiqa` 用户授权，因此默认保留该用户名。
 - 后端默认访问本机端口；如果依赖服务在其他机器上，调整相应的 `host`。
 
 这两个本地配置文件已被 Git 忽略。提交配置变更时，请更新不含真实凭据的示例文件。

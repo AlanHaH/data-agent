@@ -28,6 +28,7 @@ htmlcov/
 logs/
 *.log
 *.local
+*.local.json
 
 # Downloaded model; see docker/embedding/README.md
 /docker/embedding/bge-large-zh-v1.5/
